@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script
+  src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"
+  integrity="sha256-erF9fIMASEVmAWGdOmQi615Bmx0L/vWNixxTNDXS4FQ="
+  crossorigin="anonymous"></script>
+  
+	</head>
+	<body style = "width:100%">
+
+	<!-- This is the container for game stats, buttons and outcome -->
+	<div style = "text-align:center">
+
+	<!-- These are the game statistics -->
+	<div class="text-primary" style ="width:400px;text-align:center;font-size:30px; margin-left:auto;margin-right:auto;">TOP-SECRET BOARDGAME</div>
+	<table class="table table-hover" style="width:400px;display:inline-block">
+		<tr>
+			<td class="text-success" >
+			Location:
+			</td>
+			<td id = "locationStat">
+			
+			</td>
+		</tr>
+		<tr>
+
+			<td class="text-success">
+			HP:
+			</td>
+			<td id = "hpStat">
+			
+			</td>
+		</tr>
+		<tr>
+			<td class="text-success">
+			Prizes:
+			</td>
+			<td id = "prizesStat">
+			
+			</td>
+		</tr>
+		
+
+	</table>
+
+	<!-- These are the buttons -->
+	<div style = "text-align:center; width:600px; margin-left:auto; margin-right:auto; display:inline-block"> 
+	<br>
+	<a style ="margin:5px;width:100px;margin-top:0px" class="btn btn-primary btn-lg" id="UpBtn" href="#">UP</a>
+	<br>
+	<a style ="margin:5px;width:100px; " class="btn btn-primary btn-lg" id="LeftBtn" href="#">LEFT</a>
+	&nbsp;	&nbsp;	&nbsp;
+
+	<a style ="margin:5px;width:100px" class="btn btn-primary btn-lg" id="RightBtn" href="#">RIGHT</a>
+	<br>
+	<a style ="margin:5px;width:100px" class="btn btn-primary btn-lg" id="DownBtn" 	href="#">DOWN</a>
+
+	</div>
+
+	<!-- This is where the outcome goes -->
+	<table class="table table-hover" style="width:400px; height:130px;display:inline-block">
+		<tr>
+			<td class="text-success">
+			Outcome:
+			</td>
+			<td >
+				<pre id = "outcomeStat" style ="height: 150px;width:300px"></pre>
+			</td>
+		</tr>
+	</table>
+
+	
+
+	</div>
+
+	<!-- This is where the instructions go -->
+	<br>
+	<div class="panel panel-success" style="margin:0px">
+  		<div class="panel-heading" >
+    		<h3 class="panel-title" style="text-align:center; margin:0px">Instructions</h3>
+  		</div>
+  	</div>
+
+	<pre id="instructionsStat" style="text-align:center; height:150px; margin:5px">
+	 
+	</pre>
+
+	<script src="main.js"></script>	
+
+
+		
+	</body>
+	
+</html>
